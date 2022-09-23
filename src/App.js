@@ -23,11 +23,8 @@ function App() {
   return (
     <ThemeProvider>
         <Navbar />
-        <Home />
+        <Home coins={coins} />
         <Routes>
-          
-          <Route path='/' element={<Home coins={coins} />} />
-          <Route path='/trending' element={<Trending />} />
           <Route path='/coin/:coinId' element={<CoinPage />}>
             <Route path=':coinId' />
           </Route>
