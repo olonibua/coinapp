@@ -23,7 +23,6 @@ function App() {
   return (
     <ThemeProvider>
         <Navbar />
-        <Home coins={coins} />
         <Routes>
           <Route path='/' element={<Home coins={coins} />} />
           <Route path='/trending' element={<Trending />} />
